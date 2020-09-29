@@ -1,21 +1,15 @@
----
-title: "RMarkdown-Example make clean all leírás"
-author: Zsombor Osztós
-output:
-  html_document:
-    toc: true
-    number_sections: true
-    toc_float: true
----
+RMarkdown-Example make clean all leírás
+=======================================
+Szerző: Osztós Zsombor
 
 Bevezetés
-=========
+---------
 Jelen dokumentum a **Webtechnológiák** kurzus **1.házifeladat megoldását** tartalmazza. A feladat az volt, hogy a <https://github.com/jeszy75/markdown-examples/tree/master/rmarkdown> repository-ban található szoftver esetében a ```make clean all``` utasítás hiba nélküli lefuttásához szükséges lépéseket összegyüjtsük és dokumentáljuk. 
 
 A szükséges _komponensek_ telepítését a **Miniconda** segítségével kellett elvégezni, melynek telepítését adottnak vehettük.
 
 RMarkdown-example
-=================
+-----------------
 A példaprogram egy olyan _rmarkdown_ állomány, mely három fő részből áll, 3 fajta használatot mutat be. 
 
 1. Ez első egy _bash szkript_, mely a _httpie_ modul segítségével egy http oldal tartalmát tölti le és írja ki a kimentere (ezzel a generálandó html fájlba).
@@ -26,7 +20,7 @@ Mindhárom esetben megjelennek a végrehajtott utasítások is.
 
 
 Telepítendő modulok
-===================
+-------------------
 A jelzett forrás a _github_-ról le kell töltetünk. Amennyiben ezt klónozással akarjuk elérni, akkor a [git](https://git-scm.com/) programot telepítenünk kell. Ezt a következő utasítással tehetjük meg:
 ```
 conda install git
@@ -58,7 +52,7 @@ conda install r-ggplot2
 ```
 * [r-rmarkdown](https://rmarkdown.rstudio.com/)
 ```
-conda install r-markdown
+conda install r-rmarkdown
 ```
 * [r-reticulate](https://rstudio.github.io/reticulate/)
 ```
@@ -71,11 +65,11 @@ conda install seaborn
 
 
 Make
-===============
+----
 Ha a telepítések rendben megtörténnek, akkor a klónozott könyvtárba belépve (_markdown-examples/rmarkdown_) kiadhatjuk a ```make clean all``` utasítást
 
 Eredmény
-========
+--------
 A _make clean all_ utasítás hatására - amennyiben rendben, hiba nélkül végrehajtódik - létrejön a kívánt _html_ állomány, melyet megnyithatunk. 
 
 
